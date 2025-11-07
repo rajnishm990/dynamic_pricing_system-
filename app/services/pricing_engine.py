@@ -31,7 +31,7 @@ class PricingEngine:
         factor = 0.95 + (price_ratio - 1) * 0.3
         return max(0.9, min(1.15, factor))
     
-    def calculate(self , weather: WeatherData) -> float :
+    def calculate_weather_factor(self , weather: WeatherData) -> float :
         """ 
         calculate demand based on weather conditions
         Good Weather means higher demand for outings 
