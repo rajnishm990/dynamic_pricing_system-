@@ -163,7 +163,6 @@ class PricingEngine:
         return "Price adjustment recommended due to: " + ", ".join(reasons) + "."
 
 
-# Create global instance
 pricing_engine = PricingEngine()
 
 
