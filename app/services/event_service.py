@@ -145,6 +145,4 @@ class EventService:
             print(f"Error saving events to cache: {e}")
             db.rollback()
 
-
-# Global instance
 event_service = EventService()
