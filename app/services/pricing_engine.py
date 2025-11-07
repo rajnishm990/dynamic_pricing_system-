@@ -3,7 +3,7 @@ from typing import List
 from app.schemas.pricing import PricingRequest, PricingResponse, FactorWeights, WeatherData, EventData
 from app.core.config import settings 
 
-class PricingEnging:
+class PricingEngine:
     """ 
     Core Pricing logic using weighed factors . Basic as of now  
     Potential Update: Enhance using ML models like linear regression or Neural Net 
