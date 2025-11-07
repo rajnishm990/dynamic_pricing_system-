@@ -57,7 +57,7 @@ class WeatherService:
     
     async def _fetch_from_api(self, city:str) -> Dict:
 
-        if not self.api_key:
+        if not self.api_key or self.api_key == "demo":
             # Return mock data for demo
             return {
                 "city": city,
